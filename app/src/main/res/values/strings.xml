@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BasicAlgorithmVisualizer</string>
+    <string name="title_activity_expanded_child">ExpandedChildActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="spinner_item">
+        <item>Teacher</item>
+        <item>Registered Learner</item>
+    </string-array>
+
+</resources>

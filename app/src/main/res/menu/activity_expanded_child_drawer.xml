@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_text"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Textual"/>
+        <item
+            android:id="@+id/nav_Animations"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Animations"/>
+        <item
+            android:id="@+id/nav_quiz"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Quiz"/>
+        <item
+            android:id="@+id/nav_compare"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Comparison"/>
+    </group>
+
+    <item android:title="Discussion Forum">
+        <menu>
+            <item
+                android:id="@+id/nav_issue"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Discuss Issues"/>
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Help"/>
+        </menu>
+    </item>
+    <item android:title="Rate Us">
+        <menu>
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Provide feedback"/>
+
+        </menu>
+    </item>
+</menu>
