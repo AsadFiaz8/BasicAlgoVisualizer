@@ -3,42 +3,51 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/approve"
+            android:title="Profile" />
+        <item
             android:id="@+id/nav_text"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Textual"/>
+            android:icon="@drawable/textual"
+            android:title="Textual" />
         <item
             android:id="@+id/nav_Animations"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Animations"/>
+            android:icon="@drawable/animationicon"
+            android:title="Animations" />
         <item
             android:id="@+id/nav_quiz"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Quiz"/>
+            android:icon="@drawable/test"
+            android:title="Quiz" />
+        <item
+            android:id="@+id/nav_leaderboard"
+            android:icon="@drawable/rank"
+            android:title="Leaderboard" />
         <item
             android:id="@+id/nav_compare"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Comparison"/>
+            android:icon="@drawable/analysis"
+            android:title="Comparison" />
+        <item
+            android:id="@+id/nav_video_recommend"
+            android:icon="@drawable/video"
+            android:title="Recommended Video" />
+
     </group>
 
     <item android:title="Discussion Forum">
         <menu>
             <item
-                android:id="@+id/nav_issue"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Discuss Issues"/>
-            <item
-                android:id="@+id/nav_help"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Help"/>
+                android:id="@+id/nav_discussion_issue"
+                android:icon="@drawable/discussion"
+                android:title="Discuss Issues" />
+            <!--<item-->
+            <!--android:id="@+id/nav_help"-->
+            <!--android:icon="@drawable/ic_menu_send"-->
+            <!--android:title="Help" />-->
         </menu>
     </item>
-    <item android:title="Rate Us">
-        <menu>
-            <item
-                android:id="@+id/nav_feedback"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Provide feedback"/>
 
-        </menu>
-    </item>
 </menu>

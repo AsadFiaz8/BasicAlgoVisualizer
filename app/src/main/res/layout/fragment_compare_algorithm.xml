@@ -1,0 +1,97 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f4f4f4"
+    tools:context="com.example.asadfiaz.BasicAlgorithmVisualizer.CompareAlgorithmFragment">
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView3"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_alignStart="@+id/btnResetComparison"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:text="TextView" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/txtPointX"
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/btnResetComparison"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/btnResetComparison"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.5"
+                android:ems="10"
+                android:hint="No of inputs"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtPointY"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/graph"
+                android:layout_alignEnd="@+id/btnResetComparison"
+                android:layout_alignStart="@+id/txtPointX"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.5"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Result"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout1"
+            android:orientation="vertical">
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/graph"
+                android:layout_width="match_parent"
+                android:layout_height="250dip"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/btnResetComparison"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient_background"
+                android:padding="10dp"
+                android:text="Generate"
+                android:textColor="@android:color/white" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!--<TextView--><!--android:id="@+id/textView3"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignParentStart="true"--><!--android:layout_alignParentTop="true"--><!--android:layout_marginLeft="10dp"--><!--android:fontFamily="sans-serif-condensed"--><!--android:text="Comparison"--><!--android:textColor="#351C75"--><!--android:textSize="25sp" />-->
+</ScrollView>

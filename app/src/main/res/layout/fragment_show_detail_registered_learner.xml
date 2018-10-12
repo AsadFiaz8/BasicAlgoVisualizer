@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asadfiaz.BasicAlgorithmVisualizer.ShowDetailRegisteredLearner">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/relativeLyout1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/gradient_background">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtUserProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="34dp"
+        android:fontFamily="sans-serif"
+        android:gravity="left"
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtUserProfileEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/txtUserProfileName"
+        android:layout_below="@+id/txtUserProfileName"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:text="TextView"
+        android:textColor="@android:color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLyout1"
+        android:background="@android:color/white">
+
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView10"
+            android:layout_alignStart="@+id/textView10"
+            android:layout_below="@+id/txtUserPasswordEdit"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:text="Contact: " />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txtUserProfileNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLyout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="left"
+        android:text="123456789"
+        android:textColor="@android:color/black" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txtUserProfileType"
+        android:background="#000" />
+
+
+</RelativeLayout>

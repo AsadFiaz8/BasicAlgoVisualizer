@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BasicAlgorithmVisualizer</string>
+    <string name="app_name">Basic Algorithm Visualizer</string>
     <string name="title_activity_expanded_child">ExpandedChildActivity</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -14,5 +14,20 @@
         <item>Teacher</item>
         <item>Registered Learner</item>
     </string-array>
+
+    <string-array name="spinner_item_category">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Advance</item>
+    </string-array>
+
+    <string name="title_activity_visitor_child">VisitorChildActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_admin_expand">AdminExpandActivity</string>
+    <string name="title_activity_text_tab_layout">TextTabLayoutActivity</string>
+    <string name="title_activity_discussion_forum_tab">DiscussionForumTabActivity</string>
+    <string name="title_activity_discussion_forum_tab_layout">DiscussionForumTabLayoutActivity
+    </string>
 
 </resources>

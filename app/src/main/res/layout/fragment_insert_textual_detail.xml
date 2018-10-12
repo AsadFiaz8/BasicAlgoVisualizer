@@ -1,0 +1,93 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.asadfiaz.BasicAlgorithmVisualizer.InsertTextualDetailFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <EditText
+            android:id="@+id/algoIntroduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:hint="Algo Introduction"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/algoProperties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/algoIntroduction"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Algo Properties"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/algoProsCons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/algoProperties"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Algo Pros and Cons"
+            android:inputType="textMultiLine" />
+
+
+        <EditText
+            android:id="@+id/algoApplications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/algoProsCons"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Algo applications"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/algoPsuedoCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/algoApplications"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:hint="Algo Pseudo Code"
+            android:inputType="textMultiLine" />
+
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/algoPsuedoCode"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/gradient_background"
+            android:text="Update"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#34495E</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#1B2C59</color>
+
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <color name="colorWhite">#fff</color>
+    <color name="colorCustomListViewDarkRow">#155e63</color>
+    <color name="colorCustomListViewLightRow">#76b39d</color>
 </resources>

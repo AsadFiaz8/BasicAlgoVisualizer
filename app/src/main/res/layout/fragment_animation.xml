@@ -1,29 +1,22 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/newbackground"
     tools:context="com.example.asadfiaz.BasicAlgorithmVisualizer.AnimationFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
+    <!--custom:gif="@drawable/animation"-->
 
 
-    <com.cunoraz.gifview.library.GifView
-        android:id="@+id/gifByDefault"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        custom:gif="@drawable/animation"
-        />
-
-    <Button
-        android:id="@+id/btnstop"
-        android:layout_width="wrap_content"
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Stop"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="62dp"/>
+        android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>
