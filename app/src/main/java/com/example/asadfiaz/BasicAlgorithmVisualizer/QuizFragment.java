@@ -1,16 +1,21 @@
 package com.example.asadfiaz.BasicAlgorithmVisualizer;
 
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.TextView;
-
-import static android.app.Activity.RESULT_OK;
+import android.widget.Toast;
 
 
 /**
@@ -21,7 +26,9 @@ public class QuizFragment extends Fragment {
 
     private static final int REQUEST_CODE_QUIZ = 1;
     Button btnStartQuiz;
-    TextView txtHighScore;
+    String value;
+    Spinner spinner;
+    TextView txtQuizLevel;
 
     public QuizFragment() {
         // Required empty public constructor
@@ -35,20 +42,63 @@ public class QuizFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_quiz, container, false);
 
 
-        btnStartQuiz = (Button) view.findViewById(R.id.btnStartQuiz);
-        txtHighScore = (TextView) view.findViewById(R.id.txtHighScore);
+        final TextView txtBeginner = (TextView) view.findViewById(R.id.txtBeginner);
+        final TextView txtIntermediate = (TextView) view.findViewById(R.id.txtIntermediate);
+        final TextView txtAdvance = (TextView) view.findViewById(R.id.txtAdvance);
 
-        if (txtHighScore.equals(null)) {
-            txtHighScore.setText("");
-        }
-
-
-        btnStartQuiz.setOnClickListener(new View.OnClickListener() {
+        txtBeginner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startQUiz();
+
+                Intent intent = new Intent(getContext(), QuizActivity.class);
+                intent.putExtra("category", txtBeginner.getText().toString());
+                startActivity(intent);
+
             }
         });
+
+        txtIntermediate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getContext(), QuizActivity.class);
+                intent.putExtra("category", txtIntermediate.getText().toString());
+                startActivity(intent);
+
+            }
+        });
+
+        txtAdvance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getContext(), QuizActivity.class);
+                intent.putExtra("category", txtAdvance.getText().toString());
+                startActivity(intent);
+
+            }
+        });
+
+
+//        btnStartQuiz = (Button) view.findViewById(R.id.btnStartQuiz);
+//
+//        txtQuizLevel = (TextView) view.findViewById(R.id.txtQuizLevel);
+//        Typeface font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/kottaone-regular.ttf");
+//        txtQuizLevel.setTypeface(font);
+//
+//        spinner = (Spinner) view.findViewById(R.id.categoryQuiz);
+//        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getContext(), R.array.spinner_item_category, R.layout.spinner_item);
+//        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        spinner.setAdapter(adapter);
+//        spinner.setOnItemSelectedListener(this);
+//
+//
+//        btnStartQuiz.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startQUiz();
+//            }
+//        });
 
         return view;
     }
@@ -56,19 +106,20 @@ public class QuizFragment extends Fragment {
     public void startQUiz() {
 
         Intent intent = new Intent(getContext(), QuizActivity.class);
-        startActivityForResult(intent, REQUEST_CODE_QUIZ);
+        intent.putExtra("category", value);
+        startActivity(intent);
 
     }
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
 
-        if (requestCode == REQUEST_CODE_QUIZ) {
-            if (resultCode == RESULT_OK) {
-                int score = data.getIntExtra(QuizActivity.EXTRA_SCORE, 0);
-                txtHighScore.setText("High Score:"+score);
-            }
-        }
-    }
 
+//    @Override
+//    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//        value = String.valueOf(parent.getItemAtPosition(position));
+//
+//    }
+//
+//    @Override
+//    public void onNothingSelected(AdapterView<?> parent) {
+//
+//    }
 }

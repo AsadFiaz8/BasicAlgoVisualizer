@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class TextualFragment extends Fragment {
+public class ParentCategoriesAlgrotihmFragment extends Fragment {
 
 
-    public TextualFragment() {
+    public ParentCategoriesAlgrotihmFragment() {
         // Required empty public constructor
     }
 
@@ -23,7 +23,7 @@ public class TextualFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_textual, container, false);
+        return inflater.inflate(R.layout.fragment_parent_categories_algrotihm, container, false);
     }
 
 }
