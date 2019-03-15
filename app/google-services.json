@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "791094633191",
+    "firebase_url": "https://basicalgovisualizer.firebaseio.com",
+    "project_id": "basicalgovisualizer",
+    "storage_bucket": "basicalgovisualizer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791094633191:android:8027d88ce3a872cd",
+        "android_client_info": {
+          "package_name": "com.example.asadfiaz.BasicAlgorithmVisualizer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "791094633191-44rhq4sc1rmq2fse2fa8tche6g0sc5qm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.asadfiaz.BasicAlgorithmVisualizer",
+            "certificate_hash": "469ae0ec96635087c3646f649c15785bba5502b0"
+          }
+        },
+        {
+          "client_id": "791094633191-elucgoeplhlda2uk24d0jnbak512cs4b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCauYMQFZN8PGnx21RqsVKQTuZS8sKD4AY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "791094633191-elucgoeplhlda2uk24d0jnbak512cs4b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

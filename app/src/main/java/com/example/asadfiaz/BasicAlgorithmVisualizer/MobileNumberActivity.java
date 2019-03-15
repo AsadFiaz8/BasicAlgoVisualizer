@@ -55,7 +55,7 @@ public class MobileNumberActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 int count = txtPhoneNumber.length();
-                if (count < 11 || count > 11) {
+                if (count < 11 || count > 14) {
                     Toast.makeText(MobileNumberActivity.this, "Plesae Enter Valid Phone Number", Toast.LENGTH_SHORT).show();
                 } else {
                     number = txtPhoneNumber.getText().toString();

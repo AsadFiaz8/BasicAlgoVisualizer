@@ -5,29 +5,103 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.asadfiaz.BasicAlgorithmVisualizer.MainActivity" />
+        <activity android:name=".MainActivity" />
         <activity
-            android:name="com.example.asadfiaz.BasicAlgorithmVisualizer.ExpandedChildActivity"
+            android:name=".ExpandedChildActivity"
             android:label="@string/title_activity_expanded_child"
             android:theme="@style/AppTheme" />
-        <activity android:name="com.example.asadfiaz.BasicAlgorithmVisualizer.Login">
+        <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.asadfiaz.BasicAlgorithmVisualizer.SignUp" />
-        <activity android:name="com.example.asadfiaz.BasicAlgorithmVisualizer.Teacher" />
-        <activity android:name="com.example.asadfiaz.BasicAlgorithmVisualizer.QuizActivity"></activity>
+        <activity android:name=".SignUp" />
+        <activity android:name=".Teacher" />
+        <activity
+            android:name=".QuizActivity"
+            android:parentActivityName=".ExpandedChildActivity" />
+        <activity android:name=".TextActivity" />
+        <activity android:name=".IntroductionAppActivity" />
+        <activity
+            android:name=".VisitorChildActivity"
+            android:label="@string/title_activity_visitor_child"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".CompareAlgorithmActivity" />
+        <activity android:name=".AnimationAlgorithmActivity" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".MobileNumberActivity" />
+        <activity
+            android:name=".AdminActivity"
+            android:parentActivityName=".AdminExpandActivity" />
+        <activity
+            android:name=".AdminExpandActivity"
+            android:label="@string/title_activity_admin_expand"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TextTabLayoutActivity"
+            android:label="@string/title_activity_text_tab_layout"
+            android:parentActivityName=".ExpandedChildActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".UserprofilesActivity"
+            android:parentActivityName=".AdminExpandActivity" />
+        <activity
+            android:name=".DiscussionForumActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".VideoRecommendActivity"
+            android:parentActivityName=".ExpandedChildActivity" />
+        <activity android:name=".UserDashboardActivity" />
+        <activity
+            android:name=".AddQuestionActivity"
+            android:parentActivityName=".AdminExpandActivity" />
+        <activity
+            android:name=".QuizInsertActivity"
+            android:parentActivityName=".AdminExpandActivity" />
+        <activity
+            android:name=".EditQuizActivity"
+            android:parentActivityName=".AdminExpandActivity" />
+        <activity android:name=".ShowQuestionsActivity" />
+
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".UpdateTexualDetailActivity" />
+        <activity
+            android:name=".ShowTextualDetailActivity"
+            android:parentActivityName=".AdminExpandActivity" />
+        <activity
+            android:name=".AnimationActivity"
+            android:parentActivityName=".ExpandedChildActivity" />
+        <activity
+            android:name=".DiscussionForumTabActivity"
+            android:label="@string/title_activity_discussion_forum_tab"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".UsersForumCommentsActivity" />
+        <activity android:name=".LeaderBoardActivity" />
+        <activity android:name=".SplashScreen" />
+        <activity android:name=".RegisteredLearnersActivity" />
+        <activity
+            android:name=".DiscussionForumTabLayoutActivity"
+            android:label="@string/title_activity_discussion_forum_tab_layout"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
